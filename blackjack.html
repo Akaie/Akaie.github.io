@@ -9,6 +9,20 @@
 				height:75px;
 				width:400px;
 			}
+			.btn {
+				padding: 14px 14px;
+				border-radius: 4px;
+				background-color: #cc6699;
+				color: #ffccff;
+				text-shadow: 2px 2px black;
+				font-weight: bold;
+				text-align: center;
+			}
+			
+			.bold {
+				font-weight: bold;
+			}
+			
 		</style>
 	</head>
 	<body onload="loader()">
@@ -20,16 +34,22 @@
 					</div>
 				</div>
 			<div class = "row2">
-				<button onclick="stay()">Stand</button>
-				<button onclick="hit()">Hit</button>
-				<button onclick="newGame(10)">Bet 10</button>
-				<button onclick="newGame(25)">Bet 25</button>
-				<button onclick="newGame(50)">Bet 50</button>
-				<button onclick="newGame(100)">Bet 100</button>
-				<br />
-				<span>Bet:</span> <span id="bet"></span>
-				<br />
-				<span>Bank:</span> <span id="bank"></span>
+					<span class="bold">Bet:</span> <span id="bet"></span>
+					<br />
+					<span class="bold">Bank:</span> <span id="bank"></span>
+				<div>
+					<button onclick="stay()" class="btn">Stand</button>
+					<button onclick="hit()" class="btn">Hit</button>
+				</div>
+				<div>
+					<button onclick="newGame(10)" class="btn">Bet 10</button>
+					<button onclick="newGame(25)" class="btn">Bet 25</button>
+					<button onclick="newGame(50)" class="btn">Bet 50</button>
+					<button onclick="newGame(100)" class="btn">Bet 100</button>
+				</div>
+				<div>
+					<button onclick="resetBank()" class="btn">Reset Bank</button>
+				</div>
 			</div>
 		</div>
 		<script type="text/javascript">
@@ -77,8 +97,21 @@
 				}
 			}
 			function setBank() {
-				document.cookie = 'bank='+bank;
+				if(isNaN(bank)) {
+					document.cookie = 'bank='+500;
+				}
+				else {
+					document.cookie = 'bank='+bank;
+				}
 			}
+			
+			function resetBank() {
+				bank = 500;
+				setBank();
+				bankdiv = document.getElementById("bank");
+				bankdiv.innerHTML = bank;
+			}
+			
 			function getCard() {
 				suit = Math.floor(Math.random()*4);
 				face = Math.floor(Math.random()*13);

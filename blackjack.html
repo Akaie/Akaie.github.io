@@ -134,8 +134,9 @@
 						gameLost = true;
 						gameStarted = false;
 					}
+					draw();
 				}
-				draw();
+				
 			}
 			
 			function stay() {
@@ -151,6 +152,7 @@
 				if(getHandValue(opponentsHand) > 21) {
 					gameWon = true;
 					gameStarted = false;
+					aiInfo = "Dealer Busts"
 					bank = bank + (bet*2);
 					setBank();
 				}
@@ -179,7 +181,6 @@
 					setTimeout(dealerAI, 1000);
 				}
 				draw();
-
 			}
 			
 			function getHandValue(hand) {

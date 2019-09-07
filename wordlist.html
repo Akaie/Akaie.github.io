@@ -35,9 +35,9 @@
 			width:60%;
 		}
 		.image1 {
-			background-image: url("c.jpg");
-			background-size: cover;
-			min-height: 400px;
+			background-image: url("wordlist.jpg");
+			background-size: contain;
+			background-repeat: no-repeat;
 		}
 	</style>
 	<script>
@@ -47,13 +47,13 @@
 	<nav class="navbar fixed-top navbar-expand-sm navbar-dark" style="background-color: #111111">
 		<a class="navbar-brand" href="index.html">Software and Security</a>
 		<ul class="navbar-nav">
-			<li class="nav-item active">
+			<li class="nav-item">
 				<a class="nav-link" href="index.html">Home</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="about.html">About</a>
 			</li>
-			<li class="nav-item dropdown">
+			<li class="nav-item dropdown active">
 				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Projects</a>
 				<div class="dropdown-menu">
 					<a class="dropdown-item" href="blackjack.html">Blackjack</a>
@@ -79,9 +79,40 @@
 	<div class="content">
 		<div class="row">
 			<div class="col-6" style="font-size:18px;">
-				Welcome to my little corner of the internet. This features the various projects and work I've done as a coder and designer. This website for example is of my own design. See the about page for more information about me. See the projects dropdown for various projects I've created and uploaded to my Github. Resume is such if you're interested in working with me. Finally, contact is to get hold of me if you're interested in contacting me.
+				<p>This program is used to combine wordlists for dictionary attacks for password cracking. It loads each list, ignoring duplicates, and produces a single wordlist of the two lists combined. See the example below to understand the process better.</p>
 			</div>
 			<div class="col-6 image1">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-2">
+				<br />
+				<p>cat</p>
+				<p>dog</p>
+				<p>ferret</p>
+			</div>
+			<div class="col-2">
+				<br />
+				<br />
+				<p>+</p>
+			</div>
+			<div class="col-2">
+				<br />
+				<p>dog</p>
+				<p>bird</p>
+				<p>fish</p>
+			</div>
+			<div class="col-2">
+				<br />
+				<br />
+				<p>=</p>
+			</div>
+			<div class="col-2">
+				<p>bird</p>
+				<p>cat</p>
+				<p>dog</p>
+				<p>ferret</p>
+				<p>fish</p>
 			</div>
 		</div>
 	</div>

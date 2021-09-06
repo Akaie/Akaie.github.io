@@ -26,7 +26,17 @@ p {
 	        width:60%;
         }
 }
-@media (max-width: 768px) {
+@media (min-width: 541px) and (max-width: 768px) {
+	.content {
+	        padding:20px;
+	        color:white;
+        }
+	body {
+		font-size:1.5em;
+	}
+}
+
+@media (max-width: 540px) {
 	.content {
 	        padding:20px;
 	        color:white;

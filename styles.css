@@ -17,7 +17,7 @@ p {
 	margin: 0;
 	padding: 0;
 }
-@media only screen and (min-width: 769px) {		
+@media (min-width: 769px) {		
         .content {
 	        padding:20px;
 	        color:white;
@@ -28,7 +28,7 @@ p {
 	
 
 }
-@media only screen and (min-width: 541px) and (max-width: 768px) {
+@media (max-width: 768px) or (orientation:portrait) {
 	.content {
 	        padding:20px;
 	        color:white;
@@ -39,16 +39,6 @@ p {
 	}
 }
 
-@media only screen and (max-width: 540px) {
-	.content {
-	        padding:20px;
-	        color:white;
-		font-size:2.5em;
-        }
-	footer {
-		font-size:1.5em;
-	}
-}
 .image1 {
 	background-size: contain;
 	background-repeat: no-repeat;

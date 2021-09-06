@@ -37,6 +37,9 @@ p {
 	h5 {
 		font-size: 1.5em;
 	}
+	dropdown-item {
+		font-size:2em;
+	}
 }
 
 .image1 {

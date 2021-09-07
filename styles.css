@@ -30,8 +30,8 @@ p {
 }
 @media ((max-width: 768px) and (orientation:portrait)) or ((min-width: 769px) and (orientation:portrait)) or ((max-width: 768px) and (orientation: landscape)){
 	.content {
-		margin-left: 2%;
-		margin-right: 2%;
+		margin-left: 3%;
+		margin-right: 3%;
 		width: 94%;
 	        color:white;
 		font-size: 1.3em;

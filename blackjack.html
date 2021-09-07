@@ -18,6 +18,7 @@
 		.row2 {
 			height:75px;
 			width:400px;
+			float: right;
 		}
 		.btn {
 			padding: 14px 14px;
@@ -334,23 +335,25 @@
 			<div class = "row1">
 				<div class = "opponent">
 				</div>
-					<div class = "you">
-					</div>
+				<div class = "you">
 				</div>
-			<span class="bold">Bet:</span> <span id="bet"></span>
+			</div>
+				<div class="row2">
+					<span class="bold">Bet:</span> <span id="bet"></span>
 					<br />
 					<span class="bold">Bank:</span> <span id="bank"></span>
-				<div>
+				</div>
+				<div class="row2">
 					<button onclick="stay()" class="btn">Stand</button>
 					<button onclick="hit()" class="btn">Hit</button>
 				</div>
-				<div>
+				<div class="row2">
 					<button onclick="newGame(10)" class="btn">Bet 10</button>
 					<button onclick="newGame(25)" class="btn">Bet 25</button>
 					<button onclick="newGame(50)" class="btn">Bet 50</button>
 					<button onclick="newGame(100)" class="btn">Bet 100</button>
 				</div>
-				<div>
+				<div class="row2">
 					<button onclick="resetBank()" class="btn">Reset Bank</button>
 				</div>
 			</div>

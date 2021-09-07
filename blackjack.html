@@ -286,12 +286,13 @@
 		</script>
 </head>
 <body onload="loader()">
-		<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #111111">
-		<a class="navbar-brand" href="index.html">Software and Security</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menunav" ><span class="navbar-toggler-icon"></span></button>
-		<div class="collapse navbar-collapse" id="menunav">
-			
-			<ul class="navbar-nav collapse navbar-collapse" id="menunav">
+	<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #111111">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Software and Security</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menunav" ><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="menunav">
+
+				<ul class="navbar-nav collapse navbar-collapse" id="menunav">
 				<li class="nav-item">
 					<a class="nav-link" href="index.html">Home</a>
 				</li>
@@ -316,7 +317,8 @@
 				<li class="nav-item">
 					<a class="nav-link" href="contact.html">Contact</a>
 				</li>
-			</ul>
+				</ul>
+			</div>
 		</div>
 	</nav>
 	<div class="titleimage">
@@ -328,34 +330,36 @@
 		</div>
 	</div>
 	<div class="content">
-		<div class="row">
-			<div class="col-md-6 col-sm-12">
-				<p>This small project was completed in a day. As such it doesn't have much graphical polish, but was instead focused on creating sound logic for the game of Blackjack. Overall, it should be bug free and plays well, though double down and splitting as in the casino rules of Blackjack were left out.</p>
-			</div>
-			<div class="col-md-6 col-sm-12">
-			<div class = "row1">
-				<div class = "opponent">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<p>This small project was completed in a day. As such it doesn't have much graphical polish, but was instead focused on creating sound logic for the game of Blackjack. Overall, it should be bug free and plays well, though double down and splitting as in the casino rules of Blackjack were left out.</p>
 				</div>
-				<div class = "you">
+				<div class="col-md-6 col-sm-12">
+				<div class = "row1">
+					<div class = "opponent">
+					</div>
+					<div class = "you">
+					</div>
 				</div>
-			</div>
-				<div class="row2">
-					<span class="bold">Bet:</span> <span id="bet"></span>
-					<br />
-					<span class="bold">Bank:</span> <span id="bank"></span>
-				</div>
-				<div class="row2">
-					<button onclick="stay()" class="btn">Stand</button>
-					<button onclick="hit()" class="btn">Hit</button>
-				</div>
-				<div class="row2">
-					<button onclick="newGame(10)" class="btn">Bet 10</button>
-					<button onclick="newGame(25)" class="btn">Bet 25</button>
-					<button onclick="newGame(50)" class="btn">Bet 50</button>
-					<button onclick="newGame(100)" class="btn">Bet 100</button>
-				</div>
-				<div class="row2">
-					<button onclick="resetBank()" class="btn">Reset Bank</button>
+					<div class="row2">
+						<span class="bold">Bet:</span> <span id="bet"></span>
+						<br />
+						<span class="bold">Bank:</span> <span id="bank"></span>
+					</div>
+					<div class="row2">
+						<button onclick="stay()" class="btn">Stand</button>
+						<button onclick="hit()" class="btn">Hit</button>
+					</div>
+					<div class="row2">
+						<button onclick="newGame(10)" class="btn">Bet 10</button>
+						<button onclick="newGame(25)" class="btn">Bet 25</button>
+						<button onclick="newGame(50)" class="btn">Bet 50</button>
+						<button onclick="newGame(100)" class="btn">Bet 100</button>
+					</div>
+					<div class="row2">
+						<button onclick="resetBank()" class="btn">Reset Bank</button>
+					</div>
 				</div>
 			</div>
 		</div>

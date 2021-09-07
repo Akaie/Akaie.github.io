@@ -30,6 +30,7 @@ p {
 }
 @media ((max-width: 768px) and (orientation:portrait)) or ((min-width: 769px) and (orientation:portrait)) or ((max-width: 768px) and (orientation: landscape)){
 	.content {
+		padding: 50px;
 	        color:white;
 		font-size: 1.3em;
         }

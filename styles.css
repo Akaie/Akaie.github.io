@@ -43,8 +43,5 @@ p {
 }
 
 .image1 {
-	background-size: contain;
-	background-repeat: no-repeat;
-        background-position: center;
 	max-height: 500px;
 }

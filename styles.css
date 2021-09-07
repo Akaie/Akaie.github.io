@@ -42,16 +42,8 @@ p {
 	}
 }
 
-@media(min-width: 769px) {
-	.image1 {
-		max-height: 500px;
-		max-width: 400px;
-		height: 80vh;
-	}
+.image1 {
+	max-height: 100%;
+	max-width: 100%;
 }
 
-@media(max-width: 768px) {
-	.image1 {
-		width: 80vw;
-	}
-}

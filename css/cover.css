@@ -104,7 +104,7 @@ body {
   }
 }
 
-@media (max-width: 48px) {
+@media (max-width: 765px) {
 	nav {
 		font-size: 2rem;
 		height: 2rem;

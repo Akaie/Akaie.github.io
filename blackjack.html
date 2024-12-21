@@ -1,15 +1,12 @@
 <html>
-<head>
+<header>
 	<title>Amanda "Akaie" Frazier - Blackjack</title>
-	<script src="https://kit.fontawesome.com/7ac5a2cbce.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
- 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="styles.css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link href="css/cover.css" rel="stylesheet">
+		<style>
 		.row1 {
 			width:400px;
 			max-width: 100vw;
@@ -284,54 +281,32 @@
 				bankdiv.innerHTML = bank;
 			}
 		</script>
-</head>
-<body onload="loader()">
-	<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #111111">
-		<div class="container">
-			<a class="navbar-brand" href="index.html">Software and Security</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menunav" ><span class="navbar-toggler-icon"></span></button>
-			<div class="collapse navbar-collapse" id="menunav">
-
-				<ul class="navbar-nav collapse navbar-collapse" id="menunav">
-				<li class="nav-item">
-					<a class="nav-link" href="index.html">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="about.html">About</a>
-				</li>
-				<li class="nav-item dropdown active">
-					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Projects</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="blackjack.html">Blackjack</a>
-						<a class="dropdown-item" href="wordlist.html">Wordlist Combiner</a>
-						<a class="dropdown-item" href="math.html">MathExtended DLL</a>
-						<a class="dropdown-item" href="bingo.html">Bingo Caller</a>
-						<a class="dropdown-item" href="jenova.html">Jenova Paper</a>
-						<a class="dropdown-item" href="water.html">Water Simulation</a>
-						<a class="dropdown-item" href="infectionsim.html">Infectious Disease Spread Simulation</a>
-						<a class="dropdown-item" href="maze.html">Maze Generator and Solver</a>
-					</div>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="resume.html">Resume</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="contact.html">Contact</a>
-				</li>
-				</ul>
+</header>
+<body class="text-center" onload="loader()">
+	<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+		<header class="masthead mb-auto">
+			<div class="inner">
+				<h4 class="masthead-brand">Software and Security</h4>
+					<nav class="nav nav-masthead justify-content-center">
+						<a class="nav-link" href="index.html">Home</a>
+						<a class="nav-link" href="about.html">About</a>
+						<a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" role="button">Projects</a>
+						<ul class="dropdown-menu" id="dropdown">
+							<li><a class="dropdown-item" href="blackjack.html">Blackjack</a></li>
+							<li><a class="dropdown-item" href="wordlist.html">Wordlist Combiner</a></li>
+							<li><a class="dropdown-item" href="math.html">MathExtended DLL</a></li>
+							<li><a class="dropdown-item" href="bingo.html">Bingo Caller</a></li>
+							<li><a class="dropdown-item" href="water.html">Water Simulation</a></li>
+							<li><a class="dropdown-item" href="infectionsim.html">Infectious Disease Spread Simulation</a></li>
+							<li><a class="dropdown-item" href="maze.html">Maze Generator and Solver</a></li>
+							<li><a class="dropdown-item" href="superchat.html">YouTube API Superchat Tracker</a></li>
+							<li><a class="dropdown-item" href="tripletriad.html">Triple Triad HTML for MixItUp</a></li>
+						</ul>
+					</nav>
 			</div>
-		</div>
-	</nav>
-	<div class="titleimage">
-		<div class="catchertext">
-			<h3>Software Enginner</h3>
-			<h3>Security Expert</h3>
-			<p>A mix of Cybersecurity and coding gives</p>
-			<p>a unique perspective on software engineering.</p>
-		</div>
-	</div>
-	<div class="content">
-		<div class="container">
+		</header>
+		<main role="main" class="inner cover">
+			<h1 class="cover-heading">BlackJack</h1>
 			<div class="row">
 				<div class="col-md-6 col-sm-12">
 					<p>This small project was completed in a day. As such it doesn't have much graphical polish, but was instead focused on creating sound logic for the game of Blackjack. Overall, it should be bug free and plays well, though double down and splitting as in the casino rules of Blackjack were left out.</p>
@@ -363,28 +338,17 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<footer class="page-footer pt-4" style="color:white;">
-		<div class="container-fluid text-center text-md-left">
-			<div class="row">
-				<div class="col-md-10" >
-					<h5 class="text-uppercase font-weight-bold">Software and Security</h5>
-						<p>Dedicated professional with 7.5+ years of experience and a proven knowledge of application development, OOP design, database design, and teaching. Aspiring to leverage my skills to successfully fill a Software Engineer or Cyber Security Expert role.
-						</p>
-				</div>
-				<div class="col-md-2">
-					<h5 class="text-uppercase font-weight-bold">Links</h5>
-						<a href = "mailto:amandafrazier31@gmail.com">Email</a><br/>
-						<a href = "https://github.com/Akaie">Github</a><br/>
-						<a href = "https://www.linkedin.com/in/amanda-frazier-75249269/">Linkedin</a><br/>
-						<a href = "https://twitter.com/j_akaie">Twitter</a>
-				</div>
+		</main>
+
+		<footer class="mastfoot mt-auto">
+			<div class="inner">
+				<a href="mailto:indeterminateobsession@gmail.com"><i class="bi bi-envelope"></i></a>
+				<a href="https://github.com/Akaie"><i class="bi bi-github"></i></a>
+				<a href="https://discord.com/users/174340285906550784"><i class="bi bi-discord"></i></a>
+				<a href="https://ko-fi.com/indeterminateobsession"><i class="bi bi-cup-hot-fill"></i></a>
+				<p class="margin15"><a href="mailto:indeterminateobsession@gmail.com">Email</a> | <a href="https://github.com/Akaie">Github</a> | <a href="https://discord.com/users/174340285906550784">Discord</a> | <a href="https://ko-fi.com/indeterminateobsession">Ko-fi</a></p>
 			</div>
-		</div>
-		<div class="footer-copyright text-center py-3">© 2018 Copyright:
-			<a href="https://github.com/Akaie"> Amanda "Akaie" Frazier</a>
-		</div>
-	</footer>
+		</footer>
+	</div>
 </body>
 </html>
